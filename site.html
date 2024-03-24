@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanho Certo</title>
+    <style>
+        /* CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            color: #ccc;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px 0;
+        }
+        .Categoria-list {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .Categoria-list li {
+            list-style-type: none;
+            margin: 0 10px;
+        }
+        .Produto-block {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .Produto {
+            width: 30%;
+            margin-bottom: 20px;
+        }
+        .Produto img {
+            width: 100%;
+            height: auto;
+        }
+        .parent {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) 80px 200px auto 40px;;
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: 100px;
+        justify-content: left;
+
+        }
+        .div1 { grid-area: 1 / 1 / 2 / 2; }
+        .div2 { grid-area: 1 / 2 / 2 / 3; }
+        .div3 { grid-area: 1 / 3 / 2 / 4; }
+        .div4 { grid-area: 1 / 4 / 2 / 5; }
+        .div5 { grid-area: 2 / 1 / 3 / 2; }
+        .div6 { grid-area: 2 / 2 / 3 / 3; }
+        .div7 { grid-area: 2 / 3 / 3 / 4; }
+        .div8 { grid-area: 2 / 4 / 3 / 5; }
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="img/logo.png" alt="Company Logo" style="width:250px;height:150px;">
+    <h1>Tamanho Certo</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Produtos</a>
+    <a href="#">Sobre nós</a>
+    <a href="#">Contato</a>
+</nav>
+
+<div class="container">
+    <div class="Categoria-list">
+        <h2>Categorias:</h2>
+        <ul>
+            <a href="C:\Users\Flavio\Downloads\tamanho_certo_site\Calcados.html">Calçados</a>
+            <p></p>
+            <a href="C:\Users\Flavio\Downloads\tamanho_certo_site\Roupas.html">Roupas</a>
+            <p></p>
+            <li>Outros</li>
+            <!-- Add more Categorias as needed -->
+        </ul>
+    </div>
+
+    <div class="Parent" style=" margin: 0 auto; overflow: hidden;text-align: center;">
+        <div class="parent">
+            <div class="div1"> 
+                <a href="https://www.amazon.com.br/Sandalia-Infantil-N28ao36-Crian%C3%A7a-Num%C3%A9rico/dp/B0CMV9Y9MR/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2S1QPQTPTT964&dib=eyJ2IjoiMSJ9.HfjHx8IJ_0VujHMrecfSoPgNta4GD5bg-cEXh9o04fgKNr5Uz_5AFAsEli0pUeEb-2ibY1NGLXCMslxAnOHxU9T5tbCSHfwzACJV3b9vyS3WE76I5z78V0HACMAkeNRju6762l9z4LWZWmaoittOj0tnRAEUEjVYXV4IvhSv0zgsZAdtfvxfeE1TQtMbw-1tRg2usvTYvsfIH1NGZ4sg9nFOgvmvmLKX-MLLyK_crQnVwBvzwEdv13e0P37CVcibPtE8V1nF_Y5O-Buir10_7rXvZWFgLlwNIPMVDPRxmGo.Mj0zGXUnHNjmXD4_usB_31kUwVe61VJ0atAzWUTczxg&dib_tag=se&keywords=salto+32&qid=1710682286&sprefix=salto+32%2Caps%2C203&sr=8-1"target="_blank">
+                <img src="img/salto.jpg" alt="Produto 1" style="width:250px;height:150px;">
+                </a>
+                <h3>Sandalia Salto</h3>
+                <p>Preço: R$74,90</p> 
+                <a href="https://www.amazon.com.br/Sandalia-Infantil-N28ao36-Crian%C3%A7a-Num%C3%A9rico/dp/B0CMV9Y9MR/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2S1QPQTPTT964&dib=eyJ2IjoiMSJ9.HfjHx8IJ_0VujHMrecfSoPgNta4GD5bg-cEXh9o04fgKNr5Uz_5AFAsEli0pUeEb-2ibY1NGLXCMslxAnOHxU9T5tbCSHfwzACJV3b9vyS3WE76I5z78V0HACMAkeNRju6762l9z4LWZWmaoittOj0tnRAEUEjVYXV4IvhSv0zgsZAdtfvxfeE1TQtMbw-1tRg2usvTYvsfIH1NGZ4sg9nFOgvmvmLKX-MLLyK_crQnVwBvzwEdv13e0P37CVcibPtE8V1nF_Y5O-Buir10_7rXvZWFgLlwNIPMVDPRxmGo.Mj0zGXUnHNjmXD4_usB_31kUwVe61VJ0atAzWUTczxg&dib_tag=se&keywords=salto+32&qid=1710682286&sprefix=salto+32%2Caps%2C203&sr=8-1"target="_blank">Link</a>
+            </div>
+            
+            <div class="div2"> 
+                <a href="https://www.amazon.com.br/Tenis-Infantil-Masculino-Feminino-Calce/dp/B0C3FR5B1C/ref=sr_1_1_sspa?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2JV56RFTQWALD&dib=eyJ2IjoiMSJ9.eghHlr3iV5R7CB_XeFR3fn-EAu1UYBFTdE95_tTc6_iql9PngISHl3A1NRoyOsJESoXG6q_BeLlZB-TcDnAIr4WCypO3MGNgdgIQbb8orcoo5x_oSa-leFNLI0wK8PQiQaLZzzGlb2TxVhl-nj1-GBC1m9f-ShfGOe8g1IzaOL8wZLjxQr8K26cRds4NlLMftxs5WYnc8ZdTr7iLj9-GpRqnZz8wpmn9du5I5w4BFC81D_mx06RK5o2tlF3wuY_bDXQpMzApDJ62-HLDzQ0Mq3E_6GJCB0iGPK-_YahT3p8.nR_t7UmEXhaz8xwosqfOVw9bzqEY84i3S8tufCwTQrk&dib_tag=se&keywords=tenis+32&qid=1710682445&sprefix=tenis+32%2Caps%2C186&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"target="_blank">
+                        <img src="img/tenis.jpg" alt="Produto 1" style="width:250px;height:150px;">
+                    </a>
+                    <h3>Tenis Infantil</h3>
+                    <p>Olá cliente, você já deu uma olhadinha em nossa loja? ela foi criada com muito amor e carinho pra poder atender vocês no conforto de suas casas, aqui você vai se deparar  </p>
+                    <p>Preço: R$79,99</p> 
+                    <a href="https://www.amazon.com.br/Tenis-Infantil-Masculino-Feminino-Calce/dp/B0C3FR5B1C/ref=sr_1_1_sspa?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2JV56RFTQWALD&dib=eyJ2IjoiMSJ9.eghHlr3iV5R7CB_XeFR3fn-EAu1UYBFTdE95_tTc6_iql9PngISHl3A1NRoyOsJESoXG6q_BeLlZB-TcDnAIr4WCypO3MGNgdgIQbb8orcoo5x_oSa-leFNLI0wK8PQiQaLZzzGlb2TxVhl-nj1-GBC1m9f-ShfGOe8g1IzaOL8wZLjxQr8K26cRds4NlLMftxs5WYnc8ZdTr7iLj9-GpRqnZz8wpmn9du5I5w4BFC81D_mx06RK5o2tlF3wuY_bDXQpMzApDJ62-HLDzQ0Mq3E_6GJCB0iGPK-_YahT3p8.nR_t7UmEXhaz8xwosqfOVw9bzqEY84i3S8tufCwTQrk&dib_tag=se&keywords=tenis+32&qid=1710682445&sprefix=tenis+32%2Caps%2C186&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"target="_blank">Link</a>
+                </div>
+                <div class="div3"> 
+                    <a href="https://www.amazon.com.br/Tenis-Infantil-Masculino-Feminino-Calce/dp/B0C3FR5B1C/ref=sr_1_1_sspa?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2JV56RFTQWALD&dib=eyJ2IjoiMSJ9.eghHlr3iV5R7CB_XeFR3fn-EAu1UYBFTdE95_tTc6_iql9PngISHl3A1NRoyOsJESoXG6q_BeLlZB-TcDnAIr4WCypO3MGNgdgIQbb8orcoo5x_oSa-leFNLI0wK8PQiQaLZzzGlb2TxVhl-nj1-GBC1m9f-ShfGOe8g1IzaOL8wZLjxQr8K26cRds4NlLMftxs5WYnc8ZdTr7iLj9-GpRqnZz8wpmn9du5I5w4BFC81D_mx06RK5o2tlF3wuY_bDXQpMzApDJ62-HLDzQ0Mq3E_6GJCB0iGPK-_YahT3p8.nR_t7UmEXhaz8xwosqfOVw9bzqEY84i3S8tufCwTQrk&dib_tag=se&keywords=tenis+32&qid=1710682445&sprefix=tenis+32%2Caps%2C186&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"target="_blank">
+                            <img src="img/tenis.jpg" alt="Produto 1" style="width:250px;height:150px;">
+                        </a>
+                        <h3>Tenis Infantil</h3>
+                        <p>Olá cliente, você já deu uma olhadinha em nossa loja? ela foi criada com muito amor e carinho pra poder atender vocês no conforto de suas casas, aqui você vai se deparar  </p>
+                        <p>Preço: R$79,99</p> 
+                        <a href="https://www.amazon.com.br/Tenis-Infantil-Masculino-Feminino-Calce/dp/B0C3FR5B1C/ref=sr_1_1_sspa?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2JV56RFTQWALD&dib=eyJ2IjoiMSJ9.eghHlr3iV5R7CB_XeFR3fn-EAu1UYBFTdE95_tTc6_iql9PngISHl3A1NRoyOsJESoXG6q_BeLlZB-TcDnAIr4WCypO3MGNgdgIQbb8orcoo5x_oSa-leFNLI0wK8PQiQaLZzzGlb2TxVhl-nj1-GBC1m9f-ShfGOe8g1IzaOL8wZLjxQr8K26cRds4NlLMftxs5WYnc8ZdTr7iLj9-GpRqnZz8wpmn9du5I5w4BFC81D_mx06RK5o2tlF3wuY_bDXQpMzApDJ62-HLDzQ0Mq3E_6GJCB0iGPK-_YahT3p8.nR_t7UmEXhaz8xwosqfOVw9bzqEY84i3S8tufCwTQrk&dib_tag=se&keywords=tenis+32&qid=1710682445&sprefix=tenis+32%2Caps%2C186&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"target="_blank">Link</a>
+                    </div>
+
+                    <div class="div4"> 
+                        <a href="https://www.amazon.com.br/Tenis-Infantil-Masculino-Feminino-Calce/dp/B0C3FR5B1C/ref=sr_1_1_sspa?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2JV56RFTQWALD&dib=eyJ2IjoiMSJ9.eghHlr3iV5R7CB_XeFR3fn-EAu1UYBFTdE95_tTc6_iql9PngISHl3A1NRoyOsJESoXG6q_BeLlZB-TcDnAIr4WCypO3MGNgdgIQbb8orcoo5x_oSa-leFNLI0wK8PQiQaLZzzGlb2TxVhl-nj1-GBC1m9f-ShfGOe8g1IzaOL8wZLjxQr8K26cRds4NlLMftxs5WYnc8ZdTr7iLj9-GpRqnZz8wpmn9du5I5w4BFC81D_mx06RK5o2tlF3wuY_bDXQpMzApDJ62-HLDzQ0Mq3E_6GJCB0iGPK-_YahT3p8.nR_t7UmEXhaz8xwosqfOVw9bzqEY84i3S8tufCwTQrk&dib_tag=se&keywords=tenis+32&qid=1710682445&sprefix=tenis+32%2Caps%2C186&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"target="_blank">
+                                <img src="img/tenis.jpg" alt="Produto 1" style="width:250px;height:150px;">
+                            </a>
+                            <h3>Tenis Infantil</h3>
+                            <p>Olá cliente, você já deu uma olhadinha em nossa loja? ela foi criada com muito amor e carinho pra poder atender vocês no conforto de suas casas, aqui você vai se deparar  </p>
+                            <p>Preço: R$79,99</p> 
+                            <a href="https://www.amazon.com.br/Tenis-Infantil-Masculino-Feminino-Calce/dp/B0C3FR5B1C/ref=sr_1_1_sspa?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2JV56RFTQWALD&dib=eyJ2IjoiMSJ9.eghHlr3iV5R7CB_XeFR3fn-EAu1UYBFTdE95_tTc6_iql9PngISHl3A1NRoyOsJESoXG6q_BeLlZB-TcDnAIr4WCypO3MGNgdgIQbb8orcoo5x_oSa-leFNLI0wK8PQiQaLZzzGlb2TxVhl-nj1-GBC1m9f-ShfGOe8g1IzaOL8wZLjxQr8K26cRds4NlLMftxs5WYnc8ZdTr7iLj9-GpRqnZz8wpmn9du5I5w4BFC81D_mx06RK5o2tlF3wuY_bDXQpMzApDJ62-HLDzQ0Mq3E_6GJCB0iGPK-_YahT3p8.nR_t7UmEXhaz8xwosqfOVw9bzqEY84i3S8tufCwTQrk&dib_tag=se&keywords=tenis+32&qid=1710682445&sprefix=tenis+32%2Caps%2C186&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"target="_blank">Link</a>
+                        </div>
+
+                        <div class="div5"> 
+                            <a href="https://www.amazon.com.br/Tenis-Infantil-Masculino-Feminino-Calce/dp/B0C3FR5B1C/ref=sr_1_1_sspa?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2JV56RFTQWALD&dib=eyJ2IjoiMSJ9.eghHlr3iV5R7CB_XeFR3fn-EAu1UYBFTdE95_tTc6_iql9PngISHl3A1NRoyOsJESoXG6q_BeLlZB-TcDnAIr4WCypO3MGNgdgIQbb8orcoo5x_oSa-leFNLI0wK8PQiQaLZzzGlb2TxVhl-nj1-GBC1m9f-ShfGOe8g1IzaOL8wZLjxQr8K26cRds4NlLMftxs5WYnc8ZdTr7iLj9-GpRqnZz8wpmn9du5I5w4BFC81D_mx06RK5o2tlF3wuY_bDXQpMzApDJ62-HLDzQ0Mq3E_6GJCB0iGPK-_YahT3p8.nR_t7UmEXhaz8xwosqfOVw9bzqEY84i3S8tufCwTQrk&dib_tag=se&keywords=tenis+32&qid=1710682445&sprefix=tenis+32%2Caps%2C186&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"target="_blank">
+                                    <img src="img/tenis.jpg" alt="Produto 1" style="width:250px;height:150px;">
+                                </a>
+                                <h3>Tenis Infantil</h3>
+                                <p>Olá cliente, você já deu uma olhadinha em nossa loja? ela foi criada com muito amor e carinho pra poder atender vocês no conforto de suas casas, aqui você vai se deparar  </p>
+                                <p>Preço: R$79,99</p> 
+                                <a href="https://www.amazon.com.br/Tenis-Infantil-Masculino-Feminino-Calce/dp/B0C3FR5B1C/ref=sr_1_1_sspa?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2JV56RFTQWALD&dib=eyJ2IjoiMSJ9.eghHlr3iV5R7CB_XeFR3fn-EAu1UYBFTdE95_tTc6_iql9PngISHl3A1NRoyOsJESoXG6q_BeLlZB-TcDnAIr4WCypO3MGNgdgIQbb8orcoo5x_oSa-leFNLI0wK8PQiQaLZzzGlb2TxVhl-nj1-GBC1m9f-ShfGOe8g1IzaOL8wZLjxQr8K26cRds4NlLMftxs5WYnc8ZdTr7iLj9-GpRqnZz8wpmn9du5I5w4BFC81D_mx06RK5o2tlF3wuY_bDXQpMzApDJ62-HLDzQ0Mq3E_6GJCB0iGPK-_YahT3p8.nR_t7UmEXhaz8xwosqfOVw9bzqEY84i3S8tufCwTQrk&dib_tag=se&keywords=tenis+32&qid=1710682445&sprefix=tenis+32%2Caps%2C186&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"target="_blank">Link</a>
+                            </div>
+
+                            <div class="div6"> 
+                                <a href="https://www.amazon.com.br/Tenis-Infantil-Masculino-Feminino-Calce/dp/B0C3FR5B1C/ref=sr_1_1_sspa?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2JV56RFTQWALD&dib=eyJ2IjoiMSJ9.eghHlr3iV5R7CB_XeFR3fn-EAu1UYBFTdE95_tTc6_iql9PngISHl3A1NRoyOsJESoXG6q_BeLlZB-TcDnAIr4WCypO3MGNgdgIQbb8orcoo5x_oSa-leFNLI0wK8PQiQaLZzzGlb2TxVhl-nj1-GBC1m9f-ShfGOe8g1IzaOL8wZLjxQr8K26cRds4NlLMftxs5WYnc8ZdTr7iLj9-GpRqnZz8wpmn9du5I5w4BFC81D_mx06RK5o2tlF3wuY_bDXQpMzApDJ62-HLDzQ0Mq3E_6GJCB0iGPK-_YahT3p8.nR_t7UmEXhaz8xwosqfOVw9bzqEY84i3S8tufCwTQrk&dib_tag=se&keywords=tenis+32&qid=1710682445&sprefix=tenis+32%2Caps%2C186&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"target="_blank">
+                                        <img src="img/tenis.jpg" alt="Produto 1" style="width:250px;height:150px;">
+                                    </a>
+                                    <h3>Tenis Infantil</h3>
+                                    <p>Olá cliente, você já deu uma olhadinha em nossa loja? ela foi criada com muito amor e carinho pra poder atender vocês no conforto de suas casas, aqui você vai se deparar  </p>
+                                    <p>Preço: R$79,99</p> 
+                                    <a href="https://www.amazon.com.br/Tenis-Infantil-Masculino-Feminino-Calce/dp/B0C3FR5B1C/ref=sr_1_1_sspa?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2JV56RFTQWALD&dib=eyJ2IjoiMSJ9.eghHlr3iV5R7CB_XeFR3fn-EAu1UYBFTdE95_tTc6_iql9PngISHl3A1NRoyOsJESoXG6q_BeLlZB-TcDnAIr4WCypO3MGNgdgIQbb8orcoo5x_oSa-leFNLI0wK8PQiQaLZzzGlb2TxVhl-nj1-GBC1m9f-ShfGOe8g1IzaOL8wZLjxQr8K26cRds4NlLMftxs5WYnc8ZdTr7iLj9-GpRqnZz8wpmn9du5I5w4BFC81D_mx06RK5o2tlF3wuY_bDXQpMzApDJ62-HLDzQ0Mq3E_6GJCB0iGPK-_YahT3p8.nR_t7UmEXhaz8xwosqfOVw9bzqEY84i3S8tufCwTQrk&dib_tag=se&keywords=tenis+32&qid=1710682445&sprefix=tenis+32%2Caps%2C186&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"target="_blank">Link</a>
+                                </div>
+            </div>
+			
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Tamanho certo Site. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
